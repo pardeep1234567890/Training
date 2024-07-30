@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css object fit and cover</title>
+    <style>
+     .container{
+        border:2px solid black;
+        width: 300px;
+        height: 350px;
+     }
+     img{
+        height:300px;
+        width:290px;
+        object-fit: cover;
+        /* object-fit: contain; */
+        object-position: top right;
+     }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image">
+            <img src="https://cdn.britannica.com/16/254816-050-41C9577A/Google-logo-Googleplex-headquarters-Mountain-View-California.jpg?w=385" alt="mountain image">
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css Animation</title> <!-- moves one state to another state very smoothly-->
+    <style>
+        .container{
+            border:2px solid black;
+            width:50vw;
+            height:40vh;
+           
+        }
+        .item{
+            border: 2px solid black;
+            width: 5vw;
+            height: 4vh;
+            background-color: blanchedalmond;
+            /* animation:  pardeepKaAnimation; */
+            /* animation-duration: 4s; */
+            /* animation-delay: 2s; */
+            /* animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); */
+            /* animation-iteration-count: 2; */
+            /* animation-play-state: paused; */
+            /* animation-direction: reverse; */
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation:  pardeepKaAnimation 2s ease-in-out 1 ;
+            
+        }
+        @keyframes pardeepKaAnimation {
+        from{
+            background-color: red;
+        }
+        to{
+            background-color: yellow;
+            transform: translatex(1000px);
+        }            
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item ">Box </div>
+    </div>
+</body>
+</html>

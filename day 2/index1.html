@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in html</title>
+    <link rel="icon" href="google_office.jpg">
+</head>
+
+<body>
+    <h1>Student Information Details</h1>
+    <hr>
+    <fieldset>
+        <legend>
+            <h2>Personal details</h2>
+        </legend>
+        <form action="post">
+            <div>
+                <label for="Name">Enter your name</label>
+                <input type="text" id="Name" name="Name" placeholder="enter your name" autofocus required>
+            </div>
+            <br>
+            <div>
+                <label for="FName">Enter your Father Name</label>
+                <input type="text" id="FName" name="FName" placeholder="enter your Father name" required>
+            </div>
+            <br>
+            <div>
+                <label for="MName">Enter your mother name</label>
+                <input type="text" id="MName" name="MName" placeholder="enter your mother name" required>
+            </div>
+            <br>
+            <div>
+                <label for="Mobile Number">Enter your Mobile Number here</label>
+                <input type="tel" id="Mobile Number" name="Mobile Number" placeholder="enter your Mobile Number here" maxlength="10"
+                    required>
+            </div>
+            <br>
+            <div>
+                <label for="email">Enter your email here</label>
+                <input type="email" id="email" name="email" placeholder="enter your email here" required>
+            </div>
+            <br>
+            <div>
+                <label for="roll_no">Enter your Roll_no here</label>
+                <input type="number" id="roll_no" name="roll_no" placeholder="enter your roll_no here" required>
+            </div>
+            <br>
+            <div>
+                <input type="Submit" value="submit">
+            </div>
+
+        </form>
+
+    </fieldset>
+    <fieldset>
+        <legend>
+            <h2>College details</h2>
+        </legend>
+        <form action="post">
+            <b>Select your branch</b>
+            <div>
+
+                <input type="radio" id="cse" name="Branch" placeholder="select your Branch here">
+                <label for="cse">CSE</label><br>
+                <input type="radio" id="civil" name="Branch" placeholder="select your Branch here">
+                <label for="civil">Civil</label><br>
+                <input type="radio" id="Electrical" name="Branch" placeholder="select your Branch here">
+                <label for="Electrical">Electrical</label><br>
+                <input type="radio" id="Mechanical" name="Branch" placeholder="select your Branch here">
+                <label for="Mechanical">Mechanical</label><br>
+
+
+            </div>
+            <br>
+            <b>Select your subjects</b>
+            <div>
+                <input type="Checkbox" id="cloud" name="Branch" placeholder="select your subject here">
+                <label for="cloud">cloud</label>
+            </div>
+
+            <div>
+                <input type="Checkbox" id="Android" name="Branch" placeholder="select your subject here">
+                <label for="Android">Android</label>
+            </div>
+
+            <div>
+                <input type="Checkbox" id="ios" name="Branch" placeholder="select your subject here">
+                <label for="ios">ios</label>
+            </div>
+
+            <div>
+                <input type="Checkbox" id="Flutter" name="Branch" placeholder="select your subject here">
+                <label for="Flutter">Flutter</label>
+            </div>
+            <br>
+            <b>Select your grade</b>
+            <div>
+                <label for="grade">Grade</label>
+                <select name="grade" id="grade">
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <input type="submit" value="Submit">
+            </div>
+            <br>
+            <label for="text">Enter your Suggestion here</label>
+            <br>
+            <textarea name="message" id="text"></textarea>
+            <br>
+            <!--<button type="button" onclick="alert('Hello World!')">Click Me!</button>-->
+        </form>
+    </fieldset>
+    <fieldset>
+        <legend>
+            <h2>Additional Information</h2>
+        </legend>
+        <div>
+        <b>Select your State </b>
+        <form action="/action_page.php ">
+            <input list ="states" name="state">
+            <datalist id ="states">
+                <option value="Haryana">
+                <option value="punjab">
+                <option value="chandigrah">
+            </datalist>
+            </div>
+            <br>
+            <div>
+            <b>Select your favourite color</b>
+            <br>
+            <label for="favcolor">Select your favourite color</label>
+            <input type="color" id="favcolor" name="favcolor">
+            </div>
+            <br>
+            <div>
+            <label for="DOB">Enter your date of birth</label>
+            <input type="datetime-local" id="DOB" name="DOB">
+        </div>
+        </form>
+
+
+    </fieldset>
+
+</body>
+
+</html>
