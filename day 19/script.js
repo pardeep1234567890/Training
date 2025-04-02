@@ -33,8 +33,8 @@
 // let button = document.querySelector("#btn")
 // let para=document.querySelector("#para")
 // para.addEventListener("mouseover" ,()=>{
-    // para.style.backgroundColor="red"
-    // para.innerText="Pardeep yadav"
+//     para.style.backgroundColor="red"
+//     para.innerText="Pardeep yadav"
 // })
 
 
